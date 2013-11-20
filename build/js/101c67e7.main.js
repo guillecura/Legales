@@ -1,1 +1,0 @@
-!function(a){"use strict";a(document).on("scroll",function(){var b=a(document).scrollTop();a("#home").css("background-position-y",b/2)})}(jQuery);

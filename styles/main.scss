@@ -46,14 +46,114 @@ section{
 			}
 		}
 	}
+	&#about{
+		min-height: 100%;
+		@media #{$mobile_big}{
+			margin-bottom: 150px;
+		}
+		div{
+			@media #{$mobile_big}{
+				padding: 15px 15px 60px 15px;
+				width: 100%;
+			}
+			h2{
+				@media #{$mobile_big}{
+					font-size: 1.8em;
+					line-height: 1em;
+					padding: 15px 0;
+					width: calc(100% - 30px);
+				}
+			}
+			h6{
+				@media #{$mobile_big}{
+					font-size: 0.8em;
+					line-height: 1.4em;
+					padding: 15px 0;
+					width: calc(100% - 30px);
+				}
+			}
+			h3{
+				@media #{$mobile_big}{
+					font-size: 1.4em;
+					line-height: 1em;
+					padding: 15px 0;
+					width: calc(100% - 30px);
+				}
+			}
+			ul{
+				padding: 0;
+				text-align: center;
+				width: 100%;
+				li{
+					background-position: top;
+					background-repeat: no-repeat;
+					background-size: 120px;
+					box-sizing: border-box;
+					display: inline-block;
+					font-weight: $bold;
+					list-style: none;
+					margin: 0 8px 25px 8px;
+					padding-top: 130px;
+					text-align: center;
+					transition: all 200ms;
+					width: calc(25% - 20px);
+					@media #{$mobile_mid}{
+						margin: 0 20px;
+						padding-top: 0;
+						text-align: left;
+						width: 100%;
+					}
+					&#one, &#two, &#three, &#four, &#five, &#six, &#seven, &#eight{
+						@media #{$mobile_mid}{
+							background-image: none;
+						}
+					}
+					&#one{
+						background-image: url(../img/servicios/img_01.png);
+						background-image: url(../img/servicios/img_01.svg), url(../img/servicios/img_01.png);
+					}
+					&#two{
+						background-image: url(../img/servicios/img_02.png);
+						background-image: url(../img/servicios/img_02.svg), url(../img/servicios/img_02.png);
+					}
+					&#three{
+						background-image: url(../img/servicios/img_03.png);
+						background-image: url(../img/servicios/img_03.svg), url(../img/servicios/img_03.png);
+					}
+					&#four{
+						background-image: url(../img/servicios/img_04.png);
+						background-image: url(../img/servicios/img_04.svg), url(../img/servicios/img_04.png);
+					}
+					&#five{
+						background-image: url(../img/servicios/img_05.png);
+						background-image: url(../img/servicios/img_05.svg), url(../img/servicios/img_05.png);
+					}
+					&#six{
+						background-image: url(../img/servicios/img_06.png);
+						background-image: url(../img/servicios/img_06.svg), url(../img/servicios/img_06.png);
+					}
+					&#seven{
+						background-image: url(../img/servicios/img_07.png);
+						background-image: url(../img/servicios/img_07.svg), url(../img/servicios/img_07.png);
+					}
+					&#eight{
+						background-image: url(../img/servicios/img_08.png);
+						background-image: url(../img/servicios/img_08.svg), url(../img/servicios/img_08.png);
+					}
+				}
+			}
+		}
+	}
 	&#contact{
 		min-height: 760px;
+		@media #{$mobile_mid}{
+			margin-bottom: 200px;
+		}
 		div{
 			display: block;
 			margin: 0 auto;
 			padding: 20px;
 			position: relative;
-			width: 760px;
 
 			@media #{$mobile_big}{
 				padding: 15px 15px 60px 15px;
@@ -69,13 +169,24 @@ section{
 			}
 			article{
 				display: inline-block;
-				width: 360px;
+				width: 450px;
 
 				@media #{$mobile_big}{
 					width: calc(50% - 30px);
 				}
 				@media #{$mobile_mid}{
 					width: calc(100% - 30px);
+				}
+				b{
+					@media #{$mobile_mid}{
+						font-size: 0.9em;
+					}
+				}
+				ul{
+					@media #{$mobile_mid}{
+						padding-left: 15px;
+						width: calc(100% - 30px);
+					}
 				}
 			}
 			form{
