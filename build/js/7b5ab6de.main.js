@@ -1,0 +1,1 @@
+!function(a){"use strict";a(document).on("scroll",function(){a("#home").css("background-position-y",a(document).scrollTop()/2)}),a(document).ready(function(){a("#nine").on("click",function(){a(".nine").addClass("active")})})}(jQuery);

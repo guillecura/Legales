@@ -82,7 +82,7 @@ section{
 			}
 			ul{
 				padding: 0;
-				text-align: center;
+				text-align: left;
 				width: 100%;
 				li{
 					background-position: top;
@@ -139,6 +139,23 @@ section{
 					&#eight{
 						background-image: url(../img/servicios/img_08.png);
 						background-image: url(../img/servicios/img_08.svg), url(../img/servicios/img_08.png);
+					}
+					&#nine{
+						background-image: url(../img/servicios/img_09.png);
+						background-image: url(../img/servicios/img_09.svg), url(../img/servicios/img_09.png);
+						cursor: pointer;
+					}
+					&#ten{
+						background-image: url(../img/servicios/img_10.png);
+						background-image: url(../img/servicios/img_10.svg), url(../img/servicios/img_10.png);
+					}
+					&#eleven{
+						background-image: url(../img/servicios/img_11.png);
+						background-image: url(../img/servicios/img_11.svg), url(../img/servicios/img_11.png);
+					}
+					&#twelve{
+						background-image: url(../img/servicios/img_12.png);
+						background-image: url(../img/servicios/img_12.svg), url(../img/servicios/img_12.png);
 					}
 				}
 			}
@@ -243,6 +260,44 @@ section{
 		}
 	}
 }
+.description{
+	background: $Humo;
+	display: block;
+	height: 0px;
+	margin: 40px 0;
+	overflow-y: hidden;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+	transition: all 200ms;
+	-webkit-transition: all 200ms;
+	   -moz-transition: all 200ms;
+	     -o-transition: all 200ms;
+	&.active{
+		height: 700px;
+		padding: 30px;
+	}
+	div{
+		display: block;
+		margin: 0 auto;
+		padding: 20px;
+		&.cont{
+			background: $Blanco;
+			height: 650px;
+			width: 600px;
+			h3{
+				text-align: left;
+			}
+			ul{
+				text-align: left;
+				li{
+					list-style: none;
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+}
 footer{
 	background: $marron3;
 	color: $Gris;
@@ -252,6 +307,9 @@ footer{
 	padding: 30px 0;
 	text-align: center;
 	width: 100%;
+	div{
+		text-align: left;
+	}
 	a{
 		border-bottom: 1px dotted $Gris;
 		color: $Gris;
